@@ -19,6 +19,6 @@ from todo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('signup/', views.signupuser, name='signupuser') #auth
-    #todos
+    path('signup/', views.signupuser, name='signupuser'), #auth
+    path('current/', views.currenttodos, name='currenttodos'),#todos
 ]
